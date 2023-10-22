@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iacode.StatisticsController">
+   <children>
+      <Button fx:id="backButton" graphicTextGap="2.0" layoutX="28.0" layoutY="24.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="20.0" prefWidth="46.0" style="-fx-background-color: #FFFFFF;" text="Back">
+         <font>
+            <Font name="Georgia" size="9.0" />
+         </font>
+      </Button>
+      <Label layoutX="81.0" layoutY="28.0" text="What will your Journey look like ?">
+         <font>
+            <Font name="Georgia Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backImageView" fitHeight="11.0" fitWidth="11.0" layoutX="28.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Icons/54782.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="218.0" layoutY="73.0" prefHeight="17.0" prefWidth="120.0" text="Current Weight (KG)">
+         <font>
+            <Font name="Georgia" size="9.0" />
+         </font>
+      </Label>
+      <TextField fx:id="currentWeightField" layoutX="218.0" layoutY="94.0">
+         <font>
+            <Font name="Georgia" size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="219.0" layoutY="119.0" prefHeight="17.0" prefWidth="120.0" text="Target Weight (KG)">
+         <font>
+            <Font name="Georgia" size="9.0" />
+         </font>
+      </Label>
+      <TextField fx:id="targetWeightField" layoutX="219.0" layoutY="140.0">
+         <font>
+            <Font name="Georgia" size="11.0" />
+         </font>
+      </TextField>
+      <Label layoutX="219.0" layoutY="165.0" prefHeight="17.0" prefWidth="120.0" text="Target Time Frame (Weeks)">
+         <font>
+            <Font name="Georgia" size="9.0" />
+         </font>
+      </Label>
+      <TextField fx:id="targetTimeField" layoutX="220.0" layoutY="186.0">
+         <font>
+            <Font name="Georgia" size="11.0" />
+         </font>
+      </TextField>
+      <Button fx:id="updateButton" layoutX="236.0" layoutY="222.0" mnemonicParsing="false" onAction="#getValuesOnAction" prefHeight="21.0" prefWidth="91.0" style="-fx-background-color: #15161b;" text="Calculate now!" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="11.0" />
+         </font>
+      </Button>
+      <Label fx:id="currentWeightLabel" layoutX="370.0" layoutY="97.0" prefHeight="14.0" prefWidth="175.0" textFill="#0e8366fc">
+         <font>
+            <Font name="Georgia" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmTargetWeightLabel" layoutX="370.0" layoutY="144.0" prefHeight="12.0" prefWidth="102.0" textFill="#0e8366">
+         <font>
+            <Font name="Georgia" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmTargetTimeLabel" layoutX="371.0" layoutY="190.0" prefHeight="12.0" prefWidth="102.0" textFill="#0e8366">
+         <font>
+            <Font name="Georgia" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="setLabel" layoutX="336.0" layoutY="224.0" prefHeight="17.0" prefWidth="192.0" textFill="#0e8366">
+         <font>
+            <Font name="Georgia Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="targetLabel" layoutX="17.0" layoutY="260.0" prefHeight="17.0" prefWidth="321.0">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="weightLossLabel" layoutX="17.0" layoutY="290.0" prefHeight="17.0" prefWidth="321.0">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="achievableLabel" layoutX="17.0" layoutY="320.0" prefHeight="17.0" prefWidth="321.0">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="suggestionLabel" layoutX="17.0" layoutY="350.0" prefHeight="17.0" prefWidth="321.0">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

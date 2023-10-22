@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iacode.AccountController">
+   <children>
+      <Button fx:id="bodyInfo" layoutX="479.0" layoutY="13.0" mnemonicParsing="false" onAction="#updateAccountInfoOnAction" style="-fx-background-color: #000000;" text="Feeling Different?" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="11.0" />
+         </font>
+      </Button>
+      <Label fx:id="bmiLabel" layoutX="158.0" layoutY="370.0" prefHeight="17.0" prefWidth="111.0">
+         <font>
+            <Font name="Georgia" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="bodyFatLabel" layoutX="235.0" layoutY="370.0" prefHeight="17.0" prefWidth="186.0">
+         <font>
+            <Font name="Georgia" size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" graphicTextGap="2.0" layoutX="18.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="20.0" prefWidth="46.0" style="-fx-background-color: #FFFFFF;" text="Back">
+         <font>
+            <Font name="Georgia" size="9.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="backImageView" fitHeight="11.0" fitWidth="11.0" layoutX="18.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Icons/54782.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="welcomeLabel" layoutX="64.0" layoutY="13.0" prefHeight="25.0" prefWidth="330.0" text="Welcome Back!">
+         <font>
+            <Font name="Georgia Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="showInfo" layoutX="14.0" layoutY="368.0" mnemonicParsing="false" onAction="#showInfoOnAction" prefHeight="21.0" prefWidth="126.0" style="-fx-background-color: #000000;" text="Show BMI + Body Fat" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="403.0" layoutY="61.0" mnemonicParsing="false" onAction="#dinnerOnAction" prefHeight="113.0" prefWidth="160.0" text="Dinner">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="202.0" mnemonicParsing="false" onAction="#graphOnAction" prefHeight="132.0" prefWidth="252.0" text="Graph Analysis">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="300.0" layoutY="202.0" mnemonicParsing="false" onAction="#statsOnAction" prefHeight="132.0" prefWidth="252.0" text="Statistical Analysis">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="220.0" layoutY="61.0" mnemonicParsing="false" onAction="#lunchOnAction" prefHeight="113.0" prefWidth="160.0" text="Lunch">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="40.0" layoutY="61.0" mnemonicParsing="false" onAction="#breakfastOnAction" prefHeight="113.0" prefWidth="160.0" text="Breakfast">
+         <font>
+            <Font name="Georgia Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="calorieLeft" layoutX="337.0" layoutY="370.0" prefHeight="17.0" prefWidth="209.0">
+         <font>
+            <Font name="Georgia" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
